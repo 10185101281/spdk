@@ -136,7 +136,7 @@ raid5_xor_gen(int vects, int len, void **array)
 
 /*
  * generate the xor chunk (data can span multiple iovecs).
- * TODO: only do it for full stripe write in dRAID
+ * TODO: only do it for full stripe write in SemiRAID
  * */
 static int
 raid5_xor_stripe(struct stripe_request *stripe_req)
